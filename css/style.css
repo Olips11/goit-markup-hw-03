@@ -37,6 +37,8 @@
 .container {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1170px;
 }
 
@@ -273,7 +275,13 @@
   line-height: 1.19;
 }
 
+.address {
+  margin-top: 20px;
+}
+
 .footer-address {
+  margin-top: 0em;
+  margin-bottom: 9px;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
