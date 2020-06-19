@@ -22,6 +22,8 @@
 .list {
   list-style: none;
   margin-top: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Web Studio */
@@ -29,8 +31,6 @@
 /* header шапка сайта (Web Studio and Portfolio) */
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   background: #ffffff;
 }
 
@@ -39,7 +39,13 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1170px;
+  width: 1200px;
+
+  outline: 2px solid tomato;
+}
+.main-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* Logo */
@@ -63,7 +69,30 @@
 
 /* header-site-nav */
 
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+
+.site-nav .item {
+  /* margin-right: 50px; */
+
+  background-color: tomato;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+/* .site-nav .item + .item {
+  margin-left: 50px;
+} */
+
 .header-site-nav {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -82,12 +111,30 @@
 
 /* header-adress */
 
-.header-adress {
+.address-nav {
+  display: flex;
+  margin-left: auto;
+  font-style: normal;
+}
+
+.address-nav .item {
+  background-color: tomato;
+}
+
+.address-nav .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .header-adress:hover,
@@ -98,8 +145,11 @@
 /* banner */
 
 .section-banner {
-  background: rgba(47, 48, 58, 0.8);
   margin-bottom: 98px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: rgba(47, 48, 58, 0.8);
 }
 
 .banner {
@@ -114,6 +164,7 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
   color: #ffffff;
   font-weight: 900;
   font-size: 44px;
@@ -130,6 +181,7 @@
   height: 50px;
   margin-bottom: 200px;
   border-radius: 4px;
+
   color: #ffffff;
   background: #2196f3;
   border: 0px;
@@ -153,17 +205,31 @@
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
-  background: #f5f4fa;
   border-radius: 4px;
+
+  background: #f5f4fa;
 }
 
 .section-work {
   margin-bottom: 94px;
 }
 
+.work-list {
+  display: flex;
+}
+
+.work-list .item {
+  background-color: tomato;
+}
+
+.work-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-work-title {
   margin-top: 0px;
   margin-bottom: 10px;
+
   color: #212121;
   font-weight: bold;
   font-size: 14px;
@@ -174,6 +240,7 @@
 .section-work-text {
   margin-top: 0px;
   margin-bottom: 0px;
+
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
@@ -188,15 +255,31 @@
 .occupation-title {
   margin-top: 0px;
   margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
+.occupation-list {
+  display: flex;
+}
+
+.occupation-list .item {
+  background-color: tomato;
+}
+
+.occupation-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-occupation-title {
+  margin-top: 0px;
+  margin-right: 0px;
   width: 370px;
   height: 70px;
+
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   font-weight: bold;
@@ -212,12 +295,14 @@
   margin-bottom: 94px;
   padding-top: 94px;
   padding-bottom: 94px;
+
   background: #f5f4fa;
 }
 
 .team-title {
   margin-top: 0;
   margin-bottom: 50px;
+
   color: #212121;
   font-weight: bold;
   font-size: 36px;
@@ -226,21 +311,43 @@
   letter-spacing: 0.03em;
 }
 
+.team-list {
+  display: flex;
+}
+
+.team-list .item {
+  /* background-color: tomato; */
+}
+
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.card {
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .section-team-title {
   margin-top: 30px;
   margin-bottom: 10px;
+
   color: #212121;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 .section-team-text {
   margin-top: 0px;
   margin-bottom: 16px;
+
   color: #757575;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 /* клиенты */
@@ -252,6 +359,7 @@
 .customers {
   margin-top: 0px;
   margin-bottom: 50px;
+
   color: #212121;
   font-weight: bold;
   font-size: 36px;
@@ -259,12 +367,47 @@
   text-align: center;
 }
 
+.customers-list {
+  display: flex;
+}
+
+.customers-list .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.customers-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* footer (Web Studio and Portfolio) */
 
 .section-footer {
   padding-top: 60px;
   padding-bottom: 0px;
+  height: 252px;
+
   background: #2f303a;
+}
+
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .logo-title {
@@ -281,16 +424,28 @@
 
 .footer-address {
   margin-top: 0em;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
+
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.mail {
+  margin-top: 0em;
+  margin-bottom: 9px;
 }
 
 .footer-mail-tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
+}
+
+.block-soc {
+  display: block;
+  padding-left: 69px;
+  padding-right: 94px;
 }
 
 .footer-title {
@@ -324,6 +479,7 @@
   padding: 6px 22px;
   min-width: 73px;
   height: 38px;
+
   color: #212121;
   background: #f5f4fa;
   border: 0px;
@@ -354,6 +510,7 @@
 .projects-title {
   margin-top: 20px;
   margin-bottom: 4px;
+
   color: #212121;
   font-family: Roboto;
   font-style: normal;
@@ -366,6 +523,7 @@
 .projects-resource {
   margin-top: 0px;
   margin-bottom: 20px;
+
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
@@ -374,6 +532,7 @@
 .projects-text {
   margin-top: 0px;
   margin-bottom: 0px;
+
   color: #ffffff;
   font-size: 18px;
   line-height: 1.55;
