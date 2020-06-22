@@ -15,6 +15,7 @@
 .page {
   background-color: #ffffff;
   color: #212121;
+
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -41,6 +42,7 @@
   padding-right: 15px;
   width: 1200px;
 
+  /* убрать */
   outline: 2px solid tomato;
 }
 .main-nav {
@@ -52,6 +54,7 @@
 
 .header-logo {
   color: #212121;
+
   font-family: Raleway, cursive;
   font-weight: bold;
   font-size: 26px;
@@ -77,6 +80,7 @@
 .site-nav .item {
   /* margin-right: 50px; */
 
+  /* убоать */
   background-color: tomato;
 }
 
@@ -94,6 +98,7 @@
   padding-bottom: 32px;
 
   color: #212121;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -118,6 +123,7 @@
 }
 
 .address-nav .item {
+  /* убрать */
   background-color: tomato;
 }
 
@@ -129,7 +135,9 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   color: #757575;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -150,17 +158,20 @@
   margin-right: auto;
 
   background: rgba(47, 48, 58, 0.8); */
+
   margin-bottom: 98px;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
     url(../img/banner/Headerimg.svg);
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -198,27 +209,31 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase; */
+
+  padding-bottom: 30px;
+
   color: #ffffff;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-bottom: 30px;
 }
 
 /* кнопка banner */
 
 .banner-button {
+  margin-bottom: 0px;
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
-  margin-bottom: 0px;
   border-radius: 4px;
 
   color: #ffffff;
   background: #2196f3;
+
   border: 0px;
   font-weight: bold;
   font-size: 16px;
@@ -254,6 +269,7 @@
 }
 
 .work-list .item {
+  /* убрвть */
   background-color: tomato;
 }
 
@@ -266,6 +282,7 @@
   margin-bottom: 10px;
 
   color: #212121;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -277,6 +294,7 @@
   margin-bottom: 0px;
 
   color: #757575;
+
   font-size: 14px;
   line-height: 1.71;
 }
@@ -302,6 +320,7 @@
 }
 
 .occupation-list .item {
+  /* убрать */
   background-color: tomato;
 }
 
@@ -318,6 +337,7 @@
 
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.4;
@@ -340,6 +360,7 @@
   margin-bottom: 50px;
 
   color: #212121;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -363,8 +384,10 @@
 .card {
   width: 252px;
   height: 422px;
+
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
+
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -373,6 +396,7 @@
   margin-bottom: 10px;
 
   color: #212121;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -384,6 +408,7 @@
   margin-bottom: 16px;
 
   color: #757575;
+
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -400,6 +425,7 @@
   margin-bottom: 50px;
 
   color: #212121;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -432,6 +458,7 @@
   padding-top: 60px;
   padding-bottom: 0px;
   height: 252px;
+
   background: #2f303a;
 }
 
@@ -448,6 +475,7 @@
 
 .logo-title {
   color: #ffffff;
+
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -463,6 +491,7 @@
   margin-bottom: 6px;
 
   color: #ffffff;
+
   font-size: 14px;
   line-height: 1.71;
 }
@@ -478,6 +507,7 @@
 
 .footer-mail-tel {
   color: rgba(255, 255, 255, 0.6);
+
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
@@ -491,6 +521,7 @@
 
 .footer-title {
   color: #ffffff;
+
   font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
@@ -499,17 +530,19 @@
 }
 
 .footer-basement {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  width: 1170px;
+  padding-top: 18px;
+  padding-bottom: 21px;
   margin-top: 30px;
   margin-bottom: 0px;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
-  padding-top: 18px;
-  padding-bottom: 21px;
-  font-size: 12px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.4);
+
+  width: 1170px;
+  text-align: center;
+  font-size: 12px;
 }
 
 /* Portfolio */
@@ -543,6 +576,7 @@
 
   color: #212121;
   background: #f5f4fa;
+
   border: 0px;
   font-family: Roboto;
   font-style: normal;
@@ -577,6 +611,7 @@
 .portfolio-card {
   padding-bottom: 20px;
   background-color: #ffffff;
+
   border-radius: 0px 0px 4px 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
@@ -584,8 +619,8 @@
 
 .projects-list .item {
   display: block;
-  width: calc((100% - 60px) / 3);
   margin-top: 30px;
+  width: calc((100% - 60px) / 3);
 }
 
 .projects-list .item:not(:nth-child(3n)) {
@@ -598,6 +633,7 @@
   margin-left: 20px;
 
   color: #212121;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -612,6 +648,7 @@
   margin-left: 20px;
 
   color: #757575;
+
   font-size: 16px;
   line-height: 1.87;
 }
@@ -622,6 +659,7 @@
   margin-bottom: 0px;
 
   color: #ffffff;
+
   font-size: 18px;
   line-height: 1.55;
 }
