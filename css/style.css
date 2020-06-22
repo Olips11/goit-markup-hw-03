@@ -265,14 +265,6 @@
   background: #f5f4fa;
 }
 
-.img-work:hover {
-  background-image: linear-gradient(
-    to right,
-    rgba(33, 150, 243, 0.9),
-    rgba(33, 150, 243, 0.9)
-  );
-}
-
 .section-work {
   margin-bottom: 94px;
 }
