@@ -59,6 +59,7 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 .header-logo:hover,
@@ -103,6 +104,7 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .header-site-nav:hover,
@@ -480,6 +482,7 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 
 .address {
@@ -627,6 +630,10 @@
   margin-right: 30px;
 }
 
+.portfolio-link {
+  text-decoration: none;
+}
+
 .projects-title {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -640,6 +647,7 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 
 .projects-resource {
