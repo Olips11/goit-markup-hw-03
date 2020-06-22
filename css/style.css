@@ -229,6 +229,7 @@
 /* кнопка banner */
 
 .banner-button {
+  display: inline-flex;
   margin-bottom: 0px;
   padding: 10px 32px;
   min-width: 200px;
@@ -264,6 +265,14 @@
   background: #f5f4fa;
 }
 
+.img-work:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(33, 150, 243, 0.9),
+    rgba(33, 150, 243, 0.9)
+  );
+}
+
 .section-work {
   margin-bottom: 94px;
 }
@@ -273,7 +282,7 @@
 }
 
 .work-list .item {
-  /* убрвть */
+  /* убрать */
   background-color: tomato;
 }
 
@@ -523,6 +532,10 @@
   display: block;
   padding-left: 69px;
   padding-right: 94px;
+}
+
+.button-icon {
+  margin-left: 10px;
 }
 
 .footer-title {
