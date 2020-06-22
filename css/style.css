@@ -145,20 +145,46 @@
 /* banner */
 
 .section-banner {
-  margin-bottom: 98px;
+  /*
   margin-left: auto;
   margin-right: auto;
 
-  background: rgba(47, 48, 58, 0.8);
+  background: rgba(47, 48, 58, 0.8); */
+  margin-bottom: 98px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../img/banner/Headerimg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .banner {
+  /* text-align: center;
+  background: rgba(47, 48, 58, 0.8); */
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section-banner .banner {
+  padding: 150px 15px;
   text-align: center;
-  background: rgba(47, 48, 58, 0.8);
 }
 
 .banner-title {
-  width: 750px;
+  /* width: 750px;
   min-height: 120px;
   margin-top: 200px;
   margin-bottom: 30px;
@@ -169,8 +195,17 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase; */
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-bottom: 30px;
 }
 
 /* кнопка banner */
@@ -179,7 +214,7 @@
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 0px;
   border-radius: 4px;
 
   color: #ffffff;
@@ -276,6 +311,7 @@
 
 .section-occupation-title {
   margin-top: 0px;
+  margin-bottom: 0px;
   margin-right: 0px;
   width: 370px;
   height: 70px;
@@ -313,6 +349,7 @@
 
 .team-list {
   display: flex;
+  justify-content: space-between;
 }
 
 .team-list .item {
@@ -324,6 +361,8 @@
 }
 
 .card {
+  width: 252px;
+  height: 422px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -398,16 +437,14 @@
 }
 
 .footer-container {
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  height: 130px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 20px;
-}
-
-.footer-container {
-  display: flex;
 }
 
 .logo-title {
@@ -431,6 +468,10 @@
   line-height: 1.71;
 }
 
+.block-address {
+  display: block;
+}
+
 .mail {
   margin-top: 0em;
   margin-bottom: 9px;
@@ -440,6 +481,7 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
 }
 
 .block-soc {
@@ -458,10 +500,15 @@
 }
 
 .footer-basement {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 12px;
-  line-height: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
+  padding-top: 18px;
+  padding-bottom: 21px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* Portfolio */
@@ -472,6 +519,19 @@
 
 .section-filter {
   margin-top: 94px;
+}
+
+.invisible-heading {
+  display: none;
+}
+
+.section-filter .list {
+  display: flex;
+  justify-content: center;
+}
+
+.button-list .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-button {
@@ -504,7 +564,31 @@
 /* проекты */
 
 .section-projects {
+  margin-top: 34px;
   margin-bottom: 94px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+.projects-list .item {
+  display: block;
+  width: calc((100% - 60px) / 3);
+  margin-top: 30px;
+}
+
+.projects-list .item:not(:nth-child(3n)) {
+  margin-right: 30px;
 }
 
 .projects-title {
@@ -530,6 +614,7 @@
 }
 
 .projects-text {
+  display: none;
   margin-top: 0px;
   margin-bottom: 0px;
 
