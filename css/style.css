@@ -123,6 +123,7 @@
   display: flex;
   margin-left: auto;
   font-style: normal;
+  align-items: center;
 }
 
 .address-nav .item {
@@ -146,11 +147,38 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  align-items: center;
 }
 
-.header-adress:hover,
-.header-adress:focus {
+.link:hover,
+.link:focus {
   color: #2196f3;
+}
+
+.address-mail::before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 12px;
+  margin-right: 10;
+  background-image: url(../img/address/mail.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+.address-tel::before {
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 15px;
+  margin-right: 10;
+  background-image: url(../img/address/phone.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
 }
 
 /* banner */
@@ -256,14 +284,70 @@
 
 /* section-work преимущества */
 
-.img-work {
+.work-list .antenna::before {
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  content: '';
+  background: #f5f4fa;
+  background-image: url(../img/Section1/antenna/antenna.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+.work-list .clock::before {
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  content: '';
+  background: #f5f4fa;
+  background-image: url(../img/Section1/clock/clock.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+.work-list .diagram::before {
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  content: '';
+  background: #f5f4fa;
+  background-image: url(../img/Section1/diagram/diagram.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+.work-list .astronaut::before {
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  content: '';
+  background: #f5f4fa;
+  background-image: url(../img/Section1/astronaut/astronaut.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+/* .img-work {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
   border-radius: 4px;
 
   background: #f5f4fa;
-}
+} */
 
 .section-work {
   margin-bottom: 94px;
